@@ -1,11 +1,9 @@
 body {
-  background-color: black;
   color: white;
   text-align: center;
 }
 h1,
-h2,
-h3 {
+h2 {
   font-weight: bold;
   color: greenyellow;
 }
@@ -23,4 +21,18 @@ li a {
 nav ul li {
   display: inline-block;
   margin: 0 10px;
+}
+figcaption {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+footer {
+  font-size: 12px;
+  color: greenyellow;
+  text-align: center;
+}
+#gradient-box {
+  background: linear-gradient(to right, green, darkblue);
+  padding: 10px;
 }
