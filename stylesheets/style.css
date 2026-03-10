@@ -1,3 +1,8 @@
+/* display: block = element with a specific id or class takes the full width of its line and starts on a new line */
+/* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
+/* display: inline-block = element with a specific id or class stays in the same line but width and height can be adjusted */
+/* display: flex = element with a specific id or class arranges all elements inside it in a row or column layout, making them line up side by side by default */
+/* display: none = element with a specific id or class is completely hidden from view and takes up no space */
 body {
   color: white;
   text-align: center;
@@ -19,8 +24,11 @@ li a {
   text-decoration: none;
 }
 nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+  /* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
+  display: inline;
+  /* margin: [top & bottom] [left & right] */
+  margin: 0 70px;
+  font-size: 20px;
 }
 figcaption {
   font-size: 12px;
@@ -35,4 +43,12 @@ footer {
 #gradient-box {
   background: linear-gradient(to right, green, darkblue);
   padding: 10px;
+}
+.image-row {
+  /* display: flex = element with a specific id or class arranges all elements inside it in a row or column layout, making them line up side by side by default */
+  display: flex;
+  /* justify-content: center → centers the images */
+  justify-content: center;
+  /* gap: 20px → adds space between them */
+  gap: 20px;
 }

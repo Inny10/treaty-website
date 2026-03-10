@@ -13,6 +13,11 @@ Date Last Modified: [Date]
     <title>Treaty One</title>
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
   </head>
+  <!--
+  ID (#id) = a unique identifier for a single element on the page. Used to style or target one specific element.
+  DIV = a block-level element used to group other elements together. Useful for layout and applying styles to multiple elements at once.
+  SPAN = an inline element used to target or style a small piece of text or part of an element without affecting the layout.
+  -->
   <body id="gradient-box">
     <header>
       <h1>Treaty one</h1>
@@ -38,6 +43,8 @@ Date Last Modified: [Date]
           marked the beginning of formal agreements between the Crown and
           Indigenous Nations in Western Canada.
         </p>
+        <!-- FIGURE = groups an image with a caption (figcaption). -->
+        <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
         <figure>
           <img
             src="images/Treaty One Flag.webp"
@@ -60,22 +67,24 @@ Date Last Modified: [Date]
           meeting place for both government officials and First Nations leaders,
           making it a central location for the historic agreement.
         </p>
-        <figure>
-          <img
-            src="images/lower-fort-garry.webp"
-            alt="Picture of Lower Fort Gary in Canada"
-            height="300"
-            width="550" />
-          <figcaption>Lower Fort Garry</figcaption>
-        </figure>
-        <figure>
-          <img
-            src="images/Treaty One Signing.webp"
-            alt="Gathering of Indigenous people and Canadian representatives for the negotiations and signing of Treaty 1"
-            height="300"
-            width="550" />
-          <figcaption>Signing of Treaty One</figcaption>
-        </figure>
+        <div class="image-row">
+          <figure>
+            <img
+              src="images/lower-fort-garry.webp"
+              alt="Picture of Lower Fort Gary in Canada"
+              height="300"
+              width="550" />
+            <figcaption>Lower Fort Garry</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/Treaty One Signing.webp"
+              alt="Gathering of Indigenous people and Canadian representatives for the negotiations and signing of Treaty 1"
+              height="300"
+              width="550" />
+            <figcaption>Signing of Treaty One</figcaption>
+          </figure>
+        </div>
       </section>
       <section id="Significance">
         <h2>Significance</h2>
@@ -96,6 +105,7 @@ Date Last Modified: [Date]
           cultural well-being.
         </p>
       </section>
+      <hr style="background-color: greenyellow; border-color: greenyellow" />
     </main>
     <footer>
       <p>
