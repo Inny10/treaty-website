@@ -27,7 +27,7 @@ nav ul li {
   /* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
   display: inline;
   /* margin: [top & bottom] [left & right] */
-  margin: 0 70px;
+  margin: 0 80px;
   font-size: 20px;
 }
 figcaption {
