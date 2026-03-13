@@ -68,3 +68,7 @@ footer {
   /* padding = space inside an element between its content and its border; makes text or content less cramped */
   padding: 2px 4px;
 }
+footer .copyright {
+  color: white; /* only the &copy; will be white */
+  font-size: 18px; /* make the © bigger than the rest */
+}
