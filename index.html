@@ -3,7 +3,7 @@ Name: Inny Ogundeji
 Course: P7-8 Web Development
 Teacher: Mr. Hardman
 School: Pembina Trails Collegiate
-Date Last Modified: [Date]
+Date Last Modified: 3/13/2026
 -->
 <!doctype html>
 <html lang="en">
@@ -14,14 +14,23 @@ Date Last Modified: [Date]
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
   </head>
   <!--
-  ID (#id) = a unique identifier for a single element on the page. Used to style or target one specific element.
-  DIV = a block-level element used to group other elements together. Useful for layout and applying styles to multiple elements at once.
-  SPAN = an inline element used to target or style a small piece of text or part of an element without affecting the layout.
+  CLASS (.class) = Used to style multiple elements that share the same class name. Unlike an ID, a class can be reused many times on a webpage.
+  ID (#id) = A unique identifier for a single element on the page. Used to style or target one specific element.
+  DIV = A block-level element used to group other elements together. Useful for layout and applying styles to multiple elements at once.
+  SPAN = An inline element used to target or style a small piece of text or part of an element without affecting the layout.
   -->
+  <!-- I think the reason you said you might have a problem with my 
+  background color in the next assignmentis because it is using external CSS;
+  and that might not be the background color of all the web pages.-->
   <body id="gradient-box">
     <header>
-      <h1>Treaty one</h1>
-      <nav>
+      <h1>Treaty One</h1>
+      <!-- 
+      aria-label = provides a descriptive label for elements (like nav or buttons) 
+      that is read by screen readers for accessibility, but not visible on the page. 
+      Example: <nav aria-label="Main Navigation">...</nav>
+      -->
+      <nav aria-label="Main Navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="feedback.html">Feedback</a></li>
@@ -57,14 +66,13 @@ Date Last Modified: [Date]
         <h2>Location</h2>
         <p>
           Treaty 1 was signed at
-          <span style="background-color: black; color: white"
-            >Lower Fort Garry</span
-          >, a historic stone fort situated along the Red River in southern
-          Manitoba. The treaty negotiations took place in front of the “Big
-          House,” the residence of the Hudson’s Bay Company governor. In 1871,
-          Lower Fort Garry was a key trading post and served as an important
-          meeting place for both government officials and First Nations leaders,
-          making it a central location for the historic agreement.
+          <span class="highlight">Lower Fort Garry</span>, a historic stone fort
+          situated along the Red River in southern Manitoba. The treaty
+          negotiations took place in front of the “Big House,” the residence of
+          the Hudson’s Bay Company governor. In 1871, Lower Fort Garry was a key
+          trading post and served as an important meeting place for both
+          government officials and First Nations leaders, making it a central
+          location for the historic agreement.
         </p>
         <div class="image-row">
           <figure>
@@ -88,7 +96,7 @@ Date Last Modified: [Date]
       <section id="Significance">
         <h2>Significance</h2>
         <p>
-          Treaty 1 was a pivotal agreement in Canadian histor. It laid the
+          Treaty 1 was a pivotal agreement in Canadian history. It laid the
           groundwork for subsequent Numbered Treaties and provided a framework
           for cooperation, mutual respect, and the sharing of land and
           resources.
@@ -104,6 +112,11 @@ Date Last Modified: [Date]
           cultural well-being.
         </p>
       </section>
+      <!--
+      I did not use a class for the hr tag because, as of right now, I only have one.
+      I will probably change it to a class once I have more than one or two.
+      I know that I will use more in the next web pages.
+      -->
       <hr style="background-color: greenyellow; border-color: greenyellow" />
     </main>
     <footer>

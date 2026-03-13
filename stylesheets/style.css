@@ -19,9 +19,16 @@ nav ul {
   text-align: center;
   background-color: greenyellow;
 }
+/* :hover = changes the style of an element when the mouse is over it */
+nav ul li a:hover {
+  background-color: darkgreen; /* background changes when hovered */
+  color: white; /* text color changes for contrast */
+  padding: 10px; /* adds padding to make the hover effect more noticeable */
+}
 li a {
   color: black;
   text-decoration: none;
+  padding: 10px; /* adds padding around the text for better spacing */
 }
 nav ul li {
   /* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
@@ -41,7 +48,9 @@ footer {
   text-align: center;
 }
 #gradient-box {
+  /* background: linear-gradient(to right, green, darkblue) = creates a gradient background that transitions smoothly from green on the left to dark blue on the right */
   background: linear-gradient(to right, green, darkblue);
+  /* padding = space inside an element between it's content and it's border; makes text or content less cramped */
   padding: 10px;
 }
 .image-row {
@@ -51,4 +60,11 @@ footer {
   justify-content: center;
   /* gap: 20px → adds space between them */
   gap: 20px;
+}
+/* Highlight important text like Lower Fort Garry */
+.highlight {
+  background-color: black;
+  color: white;
+  /* padding = space inside an element between its content and its border; makes text or content less cramped */
+  padding: 2px 4px;
 }
