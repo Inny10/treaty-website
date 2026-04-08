@@ -72,3 +72,18 @@ footer .copyright {
   color: white; /* only the &copy; will be white */
   font-size: 18px; /* make the © bigger than the rest */
 }
+table {
+  /* border-collapse: collapse = removes the space between table cells, making it look cleaner */
+  border-collapse: collapse;
+  /* width: 100% = makes the table take up the full width of its container */
+  width: 100%;
+}
+table th,
+table td {
+  /* border: 1px solid black = adds a solid black border around each cell */
+  border: 1px solid black;
+  /* padding: 8px = adds space inside each cell */
+  padding: 8px;
+  /* text-align: center = aligns the text to the center of the cell */
+  text-align: center;
+}
