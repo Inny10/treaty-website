@@ -20,13 +20,8 @@ h1 {
 }
 
 header {
-  background:
-    linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.2)),
-    url("https://th.bing.com/th/id/R.5cdc554782dd049fc94779e257dfb708?rik=8bm4SzXlAdZXKw&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f70000%2fvelka%2fstars-in-the-night-sky.jpg&ehk=ZBxb28TFl%2bfu%2bQNSlWQZq46dGCJXl19f3HJFtMrFpUw%3d&risl=&pid=ImgRaw&r=0");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: center;
-  padding: 150px;
+  background-color: #002900;
+  padding: 30px;
 }
 nav ul {
   list-style-type: none;
