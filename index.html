@@ -24,7 +24,7 @@ Date Last Modified: 3/13/2026
     background color in the next assignment is because it is using external CSS;
     and that might not be the background color of all the web pages.
   -->
-  <body id="gradient-box">
+  <body>
     <header>
       <h1>Treaty One</h1>
       <!-- 
@@ -41,8 +41,8 @@ Date Last Modified: 3/13/2026
       </nav>
     </header>
     <main>
-      <section id="introduction">
-        <h2>Introduction</h2>
+      <section aria-labelledby="introduction-heading">
+        <h2 id="introduction-heading">Introduction</h2>
         <p>
           A treaty is a legally binding written agreement between sovereign
           states or international organizations, governed by international law.
@@ -64,11 +64,11 @@ Date Last Modified: 3/13/2026
           <figcaption>Treaty One Flag</figcaption>
         </figure>
       </section>
-      <section id="location">
-        <h2>Location</h2>
+      <section aria-labelledby="location-heading">
+        <h2 id="location-heading">Location</h2>
         <p>
           Treaty 1 was signed at
-          <span class="highlight">Lower Fort Garry</span>, a historic stone fort
+          <span id="highlight">Lower Fort Garry</span>, a historic stone fort
           situated along the Red River in southern Manitoba. The treaty
           negotiations took place in front of the “Big House,” the residence of
           the Hudson’s Bay Company governor. In 1871, Lower Fort Garry was a key
@@ -95,8 +95,8 @@ Date Last Modified: 3/13/2026
           </figure>
         </div>
       </section>
-      <section id="Significance">
-        <h2>Significance</h2>
+      <section aria-labelledby="significance-heading">
+        <h2 id="significance-heading">Significance</h2>
         <p>
           Treaty 1 was a pivotal agreement in Canadian history. It laid the
           groundwork for subsequent Numbered Treaties and provided a framework
@@ -123,7 +123,7 @@ Date Last Modified: 3/13/2026
     </main>
     <footer>
       <p>
-        <span class="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |
+        <span id="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |
         Educational Project on Treaty 1.
       </p>
     </footer>
