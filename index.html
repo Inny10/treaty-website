@@ -25,6 +25,8 @@ Date Last Modified: 3/13/2026
     and that might not be the background color of all the web pages.
   -->
   <body>
+    <!-- Anchor target for top -->
+    <a id="top"></a>
     <header>
       <h1>Treaty One</h1>
       <!-- 
@@ -34,14 +36,16 @@ Date Last Modified: 3/13/2026
       -->
       <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="about-treaty-one.html">About</a></li>
           <li><a href="nations.html">Nations</a></li>
+          <li><a href="treaty-one-today.html">Modern Treaty One</a></li>
+          <li style="float: right"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section aria-labelledby="introduction-heading">
+      <section class="section-box" aria-labelledby="introduction-heading">
         <h2 id="introduction-heading">Introduction</h2>
         <p>
           A treaty is a legally binding written agreement between sovereign
@@ -53,18 +57,18 @@ Date Last Modified: 3/13/2026
           marked the beginning of formal agreements between the Crown and
           Indigenous Nations in Western Canada.
         </p>
-        <!-- FIGURE = groups an image with a caption (figcaption). -->
-        <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
-        <figure>
-          <img
-            src="images/Treaty One Flag.webp"
-            alt="Image of Treaty One Flag"
-            height="300"
-            width="550" />
-          <figcaption>Treaty One Flag</figcaption>
-        </figure>
       </section>
-      <section aria-labelledby="location-heading">
+      <!-- FIGURE = groups an image with a caption (figcaption). -->
+      <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
+      <figure>
+        <img
+          src="images/Treaty One Flag.webp"
+          alt="Image of Treaty One Flag"
+          height="300"
+          width="550" />
+        <figcaption>Treaty One Flag</figcaption>
+      </figure>
+      <section class="section-box" aria-labelledby="location-heading">
         <h2 id="location-heading">Location</h2>
         <p>
           Treaty 1 was signed at
@@ -76,26 +80,26 @@ Date Last Modified: 3/13/2026
           government officials and First Nations leaders, making it a central
           location for the historic agreement.
         </p>
-        <div class="image-row">
-          <figure>
-            <img
-              src="images/lower-fort-garry.webp"
-              alt="Image of Lower Fort Garry in Canada"
-              height="300"
-              width="550" />
-            <figcaption>Lower Fort Garry</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="images/Treaty One Signing.webp"
-              alt="Gathering of Indigenous people and Canadian representatives for the negotiations and signing of Treaty 1"
-              height="300"
-              width="550" />
-            <figcaption>Signing of Treaty One</figcaption>
-          </figure>
-        </div>
       </section>
-      <section aria-labelledby="significance-heading">
+      <div class="image-row">
+        <figure>
+          <img
+            src="images/lower-fort-garry.webp"
+            alt="Image of Lower Fort Garry in Canada"
+            height="300"
+            width="550" />
+          <figcaption>Lower Fort Garry</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/Treaty One Signing.webp"
+            alt="Gathering of Indigenous people and Canadian representatives for the negotiations and signing of Treaty 1"
+            height="300"
+            width="550" />
+          <figcaption>Signing of Treaty One</figcaption>
+        </figure>
+      </div>
+      <section class="section-box" aria-labelledby="significance-heading">
         <h2 id="significance-heading">Significance</h2>
         <p>
           Treaty 1 was a pivotal agreement in Canadian history. It laid the
@@ -119,8 +123,9 @@ Date Last Modified: 3/13/2026
         I will probably change it to a class once I have more than one or two.
         I know that I will use more in the next web pages.
       -->
-      <hr style="background-color: white; border-color: white" />
     </main>
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top">↑ Top</a>
     <footer>
       <p>
         <span id="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |

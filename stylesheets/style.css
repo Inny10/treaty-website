@@ -6,54 +6,87 @@
 /* # = ID = Single use */
 /* . = Class = multiple use */
 body {
-  color: black;
+  color: white;
   text-align: center;
+  font-weight: bold;
   /*
     This can be anything from 1.6rem to 2.4rem based on what you like.
   */
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.01em;
+}
+p {
+  font-family: Georgia, Cambria, Serif;
 }
 h1 {
-  font-weight: bold;
-  font-size: 40px;
+  font-size: 3.6rem;
   color: white;
-}
-
-header {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   background-color: #002900;
   padding: 30px;
 }
-nav ul {
-  list-style-type: none;
+h2 {
+  font-size: 2.8rem;
+  letter-spacing: 0.03em;
   color: white;
-  text-decoration: none;
-  text-align: center;
+  font-weight: bold;
 }
-/* :hover = changes the style of an element when the mouse is over it */
-nav ul li a:hover {
-  background-color: darkgreen; /* background changes when hovered */
-  color: white; /* text color changes for contrast */
-  padding: 10px; /* adds padding to make the hover effect more noticeable */
-}
-li a {
+h3 {
+  font-size: 2.2rem;
+  letter-spacing: 0.02em;
   color: white;
-  text-decoration: none;
-  padding: 10px; /* adds padding around the text for better spacing */
+  font-weight: bold;
 }
-nav ul li {
-  /* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
-  display: inline;
-  /* margin: [top & bottom] [left & right] */
-  margin: 0 80px;
-  font-size: 20px;
-}
+/* * means all elements on the page */
 * {
   line-height: 140%;
+  word-spacing: normal;
+}
+
+/* The main navigation bar container */
+nav {
+  margin: 0; /* removes default margin */
+  padding: 0; /* removes default padding */
+  background-color: #333333; /* dark gray background for the nav bar */
+  overflow: hidden; /* keeps floated items inside the nav */
+}
+
+/* Remove bullets + reset UL spacing */
+nav ul {
+  margin: 0; /* removes default UL margin */
+  padding: 0; /* removes default UL padding */
+  list-style: none; /* removes bullet points */
+}
+
+/* Each list item in the nav */
+nav ul li {
+  float: left; /* places items horizontally from left to right */
+}
+
+/* The clickable link inside each nav item */
+nav ul li a {
+  display: block; /* makes the link fill the entire LI area */
+  padding: 12px 20px; /* adds space around the text (top/bottom, left/right) */
+  color: white; /* text color */
+  text-decoration: none; /* removes underline */
+}
+
+/* The active page (highlighted tab) */
+nav ul li a.active {
+  background-color: #044f83; /* blue background for the active page */
+}
+
+/* Hover effect when mouse is over a link */
+nav ul li a:hover {
+  background-color: black; /* background turns black on hover */
+  color: white; /* keeps text white */
 }
 
 html {
   font-size: 62.5%;
   background-color: whitesmoke;
+  scroll-behavior: smooth;
 }
 figcaption {
   font-size: 12px;
@@ -62,8 +95,10 @@ figcaption {
 }
 footer {
   font-size: 12px;
-  color: greenyellow;
+  background-color: #002900;
+  color: white;
   text-align: center;
+  padding: 1.5px;
 }
 
 .image-row {
@@ -84,4 +119,26 @@ footer {
 footer #copyright {
   color: white; /* only the &copy; will be white */
   font-size: 18px; /* make the © bigger than the rest */
+}
+/* Styles for the "Back to Top" button */
+.back-to-top {
+  position: fixed; /* keeps the button in the same place even when scrolling */
+  bottom: 20px; /* distance from the bottom of the screen */
+  right: 20px; /* distance from the right side of the screen */
+  background: #333333; /* dark background color for the button */
+  color: white; /* white text for contrast */
+  padding: 10px 15px; /* space inside the button (top/bottom, left/right) */
+  border-radius: 5px; /* slightly rounded corners for a smoother look */
+  text-decoration: none; /* removes underline from the link */
+  font-size: 14px; /* size of the text inside the button */
+  opacity: 0.7; /* makes the button slightly transparent */
+}
+.section-box {
+  border: 2px solid black; /* adds a black border around the section */
+  background-color: #002900; /* dark green background for the section */
+  opacity: 0.7; /* makes the background slightly transparent */
+  border-radius: 10px; /* rounds the corners of the box */
+  padding: 10px; /* adds space inside the box between the content and the border */
+  margin: 20px auto; /* adds space outside the box and centers it horizontally */
+  max-width: 1000px; /* limits the width of the box to prevent it from being too wide on large screens */
 }

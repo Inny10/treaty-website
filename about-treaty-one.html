@@ -14,6 +14,8 @@
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- Anchor target for top -->
+    <a id="top"></a>
     <header>
       <h1>About Treaty 1</h1>
       <!-- 
@@ -24,13 +26,15 @@
       <nav aria-label="Main Navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about-treaty-one.html">About</a></li>
+          <li><a class="active" href="about-treaty-one.html">About</a></li>
           <li><a href="nations.html">Nations</a></li>
+          <li><a href="treaty-one-today.html">Modern Treaty One</a></li>
+          <li style="float: right"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section aria-labelledby="who-we-are-heading">
+      <section class="section-box" aria-labelledby="who-we-are-heading">
         <h2 id="who-we-are-heading">Who We Are</h2>
         <p>
           Treaty 1 is more than just a historical agreement. It represents a
@@ -52,7 +56,9 @@
           just the document itself.
         </p>
       </section>
-      <section aria-labelledby="communities-involved-heading">
+      <section
+        class="section-box"
+        aria-labelledby="communities-involved-heading">
         <h2 id="communities-involved-heading">Communities Involved</h2>
         <p>
           Treaty 1 brought together seven First Nations located in what is now
@@ -79,74 +85,74 @@
           ensuring their communities’ voices, concerns, and interests were
           clearly expressed throughout the process.
         </p>
-        <p>The First Nations involved in Treaty 1 include:</p>
-        <ul>
-          <li>Brokenhead Ojibway Nation</li>
-          <li>Long Plain First Nation</li>
-          <li>Peguis First Nation</li>
-          <li>Roseau River Anishinaabe First Nation</li>
-          <li>Sagkeeng First Nation</li>
-          <li>Sandy Bay Ojibway First Nation</li>
-          <li>Swan Lake First Nation</li>
-        </ul>
-        <p>
-          These communities continue to exist today and remain closely connected
-          to Treaty 1 territory.
-        </p>
-        <table>
-          <caption style="font-weight: bold; text-align: center">
-            First Nations Involved in Treaty 1
-          </caption>
-          <tr>
-            <th>Community</th>
-            <th>Chief</th>
-            <th>English Name</th>
-          </tr>
-          <tr>
-            <td>
-              Portage Band<br /><small
-                >(Long Plain, Swan Lake, Sandy Bay)</small
-              >
-            </td>
-            <td>Oo-za-we-kwun</td>
-            <td>Yellowquill</td>
-          </tr>
-          <tr>
-            <td>Peguis</td>
-            <td>Mis-koo-kee-new</td>
-            <td>Red Eagle<br /><small>(Henry Prince)</small></td>
-          </tr>
-          <tr>
-            <td>Sagkeeng</td>
-            <td>Ka-ke-ka-penais</td>
-            <td>
-              Bird Forever <br />
-              <small>(William Pennefather)</small>
-            </td>
-          </tr>
-          <tr>
-            <td>Brokenhead</td>
-            <td>Na-sha-ke-pennais</td>
-            <td>Flying Down Bird</td>
-          </tr>
-          <tr>
-            <td>Roseau River</td>
-            <td>Na-ha-wa-nanan</td>
-            <td>Centre of Bird’s Tail</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Ke-we-tay-ash</td>
-            <td>Flying Ground</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Wa-ko-wush</td>
-            <td>Whip-poor-will</td>
-          </tr>
-        </table>
       </section>
-      <section aria-labelledby="nations-and-identity-heading">
+      <p>The First Nations involved in Treaty 1 include:</p>
+      <ul>
+        <li>Brokenhead Ojibway Nation</li>
+        <li>Long Plain First Nation</li>
+        <li>Peguis First Nation</li>
+        <li>Roseau River Anishinaabe First Nation</li>
+        <li>Sagkeeng First Nation</li>
+        <li>Sandy Bay Ojibway First Nation</li>
+        <li>Swan Lake First Nation</li>
+      </ul>
+      <p>
+        These communities continue to exist today and remain closely connected
+        to Treaty 1 territory.
+      </p>
+      <table>
+        <caption style="font-weight: bold; text-align: center">
+          First Nations Involved in Treaty 1
+        </caption>
+        <tr>
+          <th>Community</th>
+          <th>Chief</th>
+          <th>English Name</th>
+        </tr>
+        <tr>
+          <td>
+            Portage Band<br /><small>(Long Plain, Swan Lake, Sandy Bay)</small>
+          </td>
+          <td>Oo-za-we-kwun</td>
+          <td>Yellowquill</td>
+        </tr>
+        <tr>
+          <td>Peguis</td>
+          <td>Mis-koo-kee-new</td>
+          <td>Red Eagle<br /><small>(Henry Prince)</small></td>
+        </tr>
+        <tr>
+          <td>Sagkeeng</td>
+          <td>Ka-ke-ka-penais</td>
+          <td>
+            Bird Forever <br />
+            <small>(William Pennefather)</small>
+          </td>
+        </tr>
+        <tr>
+          <td>Brokenhead</td>
+          <td>Na-sha-ke-pennais</td>
+          <td>Flying Down Bird</td>
+        </tr>
+        <tr>
+          <td>Roseau River</td>
+          <td>Na-ha-wa-nanan</td>
+          <td>Centre of Bird’s Tail</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Ke-we-tay-ash</td>
+          <td>Flying Ground</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Wa-ko-wush</td>
+          <td>Whip-poor-will</td>
+        </tr>
+      </table>
+      <section
+        class="section-box"
+        aria-labelledby="nations-and-identity-heading">
         <h2 id="nations-and-identity-heading">Nations and Identity</h2>
         <p>
           Each of the First Nations involved in Treaty 1 has a unique history,
@@ -179,8 +185,8 @@
           continue to uphold their heritage.
         </p>
       </section>
-      <section>
-        <h2>Key Terms</h2>
+      <section class="section-box" aria-labelledby="Key-terms-heading">
+        <h2 id="key-terms-heading">Key Terms</h2>
         <p>
           Treaty 1 included several important agreements that outlined how both
           First Nations and the Crown would move forward after the signing.
@@ -259,7 +265,7 @@
           written document, leading to long-standing disputes.
         </p>
       </section>
-      <section aria-labelledby="comparing-treaties-heading">
+      <section class="section-box" aria-labelledby="comparing-treaties-heading">
         <h2 id="comparing-treaties-heading">Comparing Treaties</h2>
         <p>
           Treaty 1 was the first of the Numbered Treaties signed after
@@ -325,6 +331,14 @@
         </p>
       </section>
     </main>
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top">↑ Top</a>
+    <footer>
+      <p>
+        <span id="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |
+        Educational Project on Treaty 1.
+      </p>
+    </footer>
   </body>
 </html>
 <!-- 
