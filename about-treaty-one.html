@@ -3,7 +3,7 @@
   Course: Web Development II
   Teacher: Mr. Hardman
   School: PTEC
-  Date Last Modified:
+  Date Last Modified: 5/11/2026
 -->
 <!doctype html>
 <html lang="en">
@@ -15,6 +15,10 @@
   </head>
   <body>
     <!-- Anchor target for top -->
+    <!-- 
+      The anchor tag with an id of "top" serves as a target for the back-to-top button. 
+      When users click the back-to-top link, it will scroll the page back to this anchor point at the top of the page.
+    -->
     <a id="top"></a>
     <header>
       <h1>About Treaty 1</h1>
@@ -29,12 +33,24 @@
           <li><a class="active" href="about-treaty-one.html">About</a></li>
           <li><a href="nations.html">Nations</a></li>
           <li><a href="treaty-one-today.html">Modern Treaty One</a></li>
+          <!-- 
+            style="float: right" = This CSS style is applied to the list item to make it float to the right side of the navigation bar. 
+            This is often used for items like "Contact" that are meant to be visually separated from the main navigation links.
+          -->
           <li style="float: right"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <!--
+        aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
+      <!-- The section tag is used to define a section in the document. This applies for all sections -->
       <section class="section-box" aria-labelledby="who-we-are-heading">
+        <!--
+          The ID of the heading (h2) is "who-we-are-heading" and it is used in the aria-labelledby attribute of the section to link them together for accessibility purposes.
+        -->
         <h2 id="who-we-are-heading">Who We Are</h2>
         <p>
           Treaty 1 is more than just a historical agreement. It represents a
@@ -56,6 +72,10 @@
           just the document itself.
         </p>
       </section>
+      <!-- 
+        I used a div to align the following two images side by side because they are related content. 
+        This allows me to apply styles to both images as a cohesive unit, creating a visually appealing layout.
+      -->
       <div class="image-row">
         <!-- FIGURE = groups an image with a caption (figcaption). -->
         <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
@@ -81,7 +101,14 @@
       <section
         class="section-box"
         aria-labelledby="communities-involved-heading">
+        <!--
+          aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
         <h2 id="communities-involved-heading">Communities Involved</h2>
+        <!--
+          The ID of the heading (h2) is "communities-involved-heading" and it is used in the aria-labelledby attribute of the section to link them together for accessibility purposes.
+        -->
         <p>
           Treaty 1 brought together seven First Nations located in what is now
           southern Manitoba.
@@ -108,6 +135,12 @@
           clearly expressed throughout the process.
         </p>
       </section>
+      <!--
+        The table element is used to display data in a structured format. It consists of rows and columns, with headers to label the data.
+        In this case, the table lists the First Nations involved in Treaty 1, along with their chiefs and English names.
+        The caption provides a title for the table, and the use of <th> tags indicates the header cells for each column.
+        The use of <td> tags indicates the data cells for each row, and the use of the <small> tag is used to provide additional information in a smaller font size for clarity.>
+      -->
       <table>
         <caption style="font-weight: bold; text-align: center">
           First Nations Involved in Treaty 1
@@ -120,6 +153,10 @@
         <tr>
           <td>
             Portage Band<br />
+            <!--
+              The <small> tag is used to provide additional information in a smaller font size for clarity. 
+              In this case, it indicates the specific communities (Long Plain, Swan Lake, Sandy Bay) that are part of the Portage Band.
+            -->
             <small>(Long Plain, Swan Lake, Sandy Bay)</small>
           </td>
           <td>Oo-za-we-kwun</td>
@@ -162,10 +199,24 @@
       <section
         class="section-box"
         aria-labelledby="first-nations-involved-heading">
+        <!--
+          aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
         <h2 id="first-nations-involved-heading">First Nations Involved</h2>
+        <!--
+          The ID of the heading (h2) is "first-nations-involved-heading" and it is used in the aria-labelledby attribute of the section to link them together for accessibility purposes.
+        -->
         <p>The First Nations involved in Treaty 1 include:</p>
         <div id="list-wrapper">
+          <!--
+          The <div> element is used to group the list of First Nations together for styling purposes.
+        -->
           <ul id="nations-list">
+            <!--
+            The <ul> element is used to create an unordered list of the First Nations involved in Treaty 1.
+            The ID "nations-list" can be used to apply specific styles to this list, such as font, color, or spacing, to make it visually appealing and easy to read.
+          -->
             <li>Brokenhead Ojibway Nation</li>
             <li>Long Plain First Nation</li>
             <li>Peguis First Nation</li>
@@ -176,6 +227,11 @@
           </ul>
         </div>
         <p style="text-align: center">
+          <!--
+          The <p> element is used to create a paragraph of text.
+          The style attribute is used to center the text within the paragraph, making it visually distinct and emphasizing the importance of the information about the communities involved in Treaty 1.
+          I chose to use inline CSS for this specific styling because it will not make sense to sue external as it will make all the paragraphs centered and I only want this one to be centered. 
+        -->
           These communities continue to exist today and remain closely connected
           to Treaty 1 territory.
         </p>
@@ -196,7 +252,15 @@
       <section
         class="section-box"
         aria-labelledby="nations-and-identity-heading">
+        <!--
+          aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
         <h2 id="nations-and-identity-heading">Nations and Identity</h2>
+        <!--
+          The ID of the heading (h2) is "nations-and-identity-heading" and it is used in the aria-labelledby 
+          attribute of the section to link them together for accessibility purposes.
+        -->
         <p>
           Each of the First Nations involved in Treaty 1 has a unique history,
           culture, and connection to the land.
@@ -229,8 +293,20 @@
         </p>
       </section>
       <div class="intro-wrapper">
+        <!--
+        The class "intro-wrapper" is used to group the following section and figure together for styling purposes. 
+        This allows me to apply specific styles to this group of content, such as layout, spacing, or background.
+      -->
         <section class="section-box" aria-labelledby="Key-terms-heading">
+          <!--
+          aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
           <h2 id="key-terms-heading">Key Terms</h2>
+          <!--
+            The ID of the heading (h2) is "key-terms-heading" and it is used in the aria-labelledby 
+            attribute of the section to link them together for accessibility purposes.
+          -->
           <p>
             Treaty 1 included several important agreements that outlined how
             both First Nations and the Crown would move forward after the
@@ -250,7 +326,15 @@
         </figure>
       </div>
       <section class="section-box" aria-labelledby="land-agreement-heading">
+        <!--
+        aria-labelledby = associates the section with a heading (like h3) for accessibility. 
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
         <h3 id="land-agreement-heading">Land Agreement</h3>
+        <!--
+          The ID of the heading (h3) is "land-agreement-heading" and it is used in the aria-labelledby 
+          attribute of the section to link them together for accessibility purposes.  
+        -->
         <p>
           As part of the treaty, First Nations agreed to allow the Crown to use
           large portions of their traditional territories. This made it possible
@@ -269,7 +353,18 @@
         </p>
       </section>
       <section class="section-box" aria-labelledby="reserve-lands-heading">
+        <!--
+        aria-labelledby = associates the section with a heading (like h3) for accessibility.
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
+        <!--
+        The class "section-box" is used to apply specific styles to this section, such as borders, padding, or background color, to visually distinguish it from other sections on the page.
+      -->
         <h3 id="reserve-lands-heading">Reserve Lands</h3>
+        <!--
+          The ID of the heading (h3) is "reserve-lands-heading" and it is used in the aria-labelledby 
+          attribute of the section to link them together for accessibility purposes.
+        -->
         <p>
           The treaty established reserve lands as designated areas for First
           Nations communities. Each family of five was to receive 160 acres
@@ -288,7 +383,15 @@
         </p>
       </section>
       <div class="intro-wrapper">
+        <!--
+        The class "intro-wrapper" is used to group the following section and figure together for styling purposes.
+      -->
         <section class="section-box" aria-labelledby="annual-payments-heading">
+          <!--
+          The class section Box is used to apply specific styles to this section, such as borders, padding, or background color, to visually distinguish it from other sections on the page.
+          aria-labelledby = associates the section with a heading (like h3) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
           <h3 id="annual-payments-heading">Annual Payments</h3>
           <p>
             The treaty included yearly payments, known as annuities, for each
@@ -315,7 +418,16 @@
         </figure>
       </div>
       <section class="section-box" aria-labelledby="goods-support-heading">
+        <!--
+        The class "section-box" is used to apply specific styles to this section, such as borders, padding, or background color, to visually distinguish it from other sections on the page.
+        aria-labelledby = associates the section with a heading (like h3) for accessibility. 
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
         <h3 id="goods-support-heading">Goods and Support</h3>
+        <!--
+          The ID of the heading (h3) is "goods-support-heading" and it is used in the aria-labelledby 
+          attribute of the section to link them together for accessibility purposes.
+        -->
         <h4>Agricultural Support</h4>
         <p>
           The treaty promised tools to those cultivating land, including hoes,
@@ -341,10 +453,22 @@
         </p>
       </section>
       <div class="intro-wrapper">
+        <!--
+        The class "intro-wrapper" is used to group the following section and figure together for styling purposes.
+      -->
         <section
           class="section-box"
           aria-labelledby="traditional-practices-heading">
+          <!--
+            The class "section-box" is used to apply specific styles to this section, such as borders, padding, or background color, to visually distinguish it from other sections on the page.
+            aria-labelledby = associates the section with a heading (like h3) for accessibility. 
+            It helps screen readers understand the structure and content of the page by linking the section to its heading.
+          -->
           <h3 id="traditional-practices-heading">Traditional Practices</h3>
+          <!--
+            The ID of the heading (h3) is "traditional-practices-heading" and it is used in the aria-labelledby 
+            attribute of the section to link them together for accessibility purposes.
+          -->
           <p>
             The treaty recognized the importance of traditional activities and
             stated that First Nations could continue practices such as hunting,
@@ -373,7 +497,17 @@
         </figure>
       </div>
       <section class="section-box" aria-labelledby="comparing-treaties-heading">
+        <!--
+        The class "section-box" is used to apply specific styles to this section, such as borders, padding, or background color, to visually distinguish it from other sections on the page.
+        aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
         <h2 id="comparing-treaties-heading">Comparing Treaties</h2>
+        <!--
+          The ID of the heading (h2) is "comparing-treaties-heading" and it is used in the aria-labelledby 
+          attribute of the section to link them together for accessibility purposes.
+        
+        -->
         <p>
           Treaty 1 was the first of the Numbered Treaties signed after
           Confederation, which is when Canada became a country in 1867. Being
@@ -449,21 +583,19 @@
       </figure>
     </main>
     <!-- Back to top button -->
+    <!--
+      The back-to-top button is a link that allows users to quickly return to the top of the page. 
+      It is typically styled to be easily visible and accessible, often positioned in the bottom right corner of the screen. 
+      When clicked, it scrolls the page back up to the anchor point defined at the top of the page (in this case, the <a id="top"></a> element).
+      The class "back-to-top" can be used to apply specific styles to this button, such as background color, font size, or hover effects, to make it stand out and encourage users to use it for easy navigation.
+    -->
     <a href="#top" class="back-to-top">↑ Top</a>
     <footer>
       <p>
+        <!-- Copyright information. The &copy; entity represents the copyright symbol. The span id="copyright" is used to style the copyright symbol. -->
         <span id="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |
         Educational Project on Treaty 1.
       </p>
     </footer>
   </body>
 </html>
-<!-- 
-mr hardman said an idea could be like a section comparing treaties, like treaty
-one the oldest to treaty 10 the newest. Like how treaty one dont get the same
-benefits has other treaties, like treaty 2/3/4/5/6/7/8/9. idk. also like how
-treaty one had to fight to get the 5$ like government pay instead of 3$ bc other
-treaties got that.
-
-Kelvin/cruz will show me how to add banners behind at the begging of the web page for aesthetic purposes.
--->

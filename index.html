@@ -26,6 +26,10 @@ Date Last Modified: 3/13/2026
   -->
   <body>
     <!-- Anchor target for top -->
+    <!-- 
+      The anchor tag with an id of "top" serves as a target for the back-to-top button. 
+      When users click the back-to-top link, it will scroll the page back to this anchor point at the top of the page.
+    -->
     <a id="top"></a>
     <header>
       <h1>Treaty One</h1>
@@ -40,12 +44,25 @@ Date Last Modified: 3/13/2026
           <li><a href="about-treaty-one.html">About</a></li>
           <li><a href="nations.html">Nations</a></li>
           <li><a href="treaty-one-today.html">Modern Treaty One</a></li>
+          <!-- 
+            style="float: right" = This CSS style is applied to the list item to make it float to the right side of the navigation bar. 
+            This is often used for items like "Contact" that are meant to be visually separated from the main navigation links.
+          -->
           <li style="float: right"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <!-- 
+        I used a div to group the introduction section and the first image together because they are related content. 
+        This allows me to apply styles to both the text and the image as a cohesive unit, creating a visually appealing layout.
+    -->
       <div class="intro-wrapper">
+        <!-- 
+          aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
+        <!-- The section tag is used to define a section in the document. This applies for all sections -->
         <section class="section-box" aria-labelledby="introduction-heading">
           <h2 id="introduction-heading">Introduction</h2>
           <p>
@@ -71,6 +88,10 @@ Date Last Modified: 3/13/2026
           <figcaption>Treaty One Flag</figcaption>
         </figure>
       </div>
+      <!-- 
+        aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
       <section class="section-box" aria-labelledby="location-heading">
         <h2 id="location-heading">Location</h2>
         <p>
@@ -84,7 +105,13 @@ Date Last Modified: 3/13/2026
           location for the historic agreement.
         </p>
       </section>
+      <!-- 
+        I used a div to group the images together because they are related content. 
+        This allows me to apply styles to both images as a cohesive unit, creating a visually appealing layout.
+      -->
       <div class="image-row">
+        <!-- FIGURE = groups an image with a caption (figcaption). -->
+        <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
         <figure>
           <img
             src="images/lower-fort-garry.webp"
@@ -102,6 +129,10 @@ Date Last Modified: 3/13/2026
           <figcaption>Signing of Treaty One</figcaption>
         </figure>
       </div>
+      <!-- 
+        aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
       <section class="section-box" aria-labelledby="significance-heading">
         <h2 id="significance-heading">Significance</h2>
         <p>
@@ -121,16 +152,20 @@ Date Last Modified: 3/13/2026
           cultural well-being.
         </p>
       </section>
-      <!--
-        I did not use a class for the hr tag because, as of right now, I only have one.
-        I will probably change it to a class once I have more than one or two.
-        I know that I will use more in the next web pages.
-      -->
     </main>
     <!-- Back to top button -->
+    <!-- 
+      The back-to-top button is a link that allows users to quickly return to the top of the page. 
+      It is styled to be easily visible and accessible, improving navigation on longer pages.
+    -->
     <a href="#top" class="back-to-top">↑ Top</a>
+    <!-- 
+      The footer provides important information about the website, such as copyright details and contact information. 
+      It is typically placed at the bottom of the page and styled to be distinct from the main content.
+    -->
     <footer>
       <p>
+        <!-- Copyright information. The &copy; entity represents the copyright symbol. The span id="copyright" is used to style the copyright symbol. -->
         <span id="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |
         Educational Project on Treaty 1.
       </p>

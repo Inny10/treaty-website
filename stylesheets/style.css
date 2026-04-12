@@ -53,24 +53,25 @@ h3 {
   text-transform: uppercase; /* makes all letters uppercase */
 }
 h4 {
-  font-size: 1.8rem;
-  letter-spacing: 0.01em;
-  color: white;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
+  font-size: 1.8rem; /* size of h4 headings */
+  letter-spacing: 0.01em; /* small space between letters */
+  color: white; /* text color is white */
+  font-weight: bold; /* text is bolder */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the text */
   text-transform: uppercase; /* makes all letters uppercase */
 }
 /* * means all elements on the page */
 * {
-  line-height: 140%;
-  word-spacing: normal;
+  line-height: 140%; /* sets space between lines */
+  word-spacing: normal; /* normal space between words */
 }
 
 /* The main navigation bar container */
 nav {
-  margin: 0; /* removes default margin */
-  padding: 0; /* removes default padding */
+  margin: 0; /* removes outside space */
+  padding: 0; /* removes inside space */
   background-color: #333333; /* dark gray background for the nav bar */
   overflow: hidden; /* keeps floated items inside the nav */
 }
@@ -79,49 +80,50 @@ nav {
 nav ul {
   margin: 0; /* removes default UL margin */
   padding: 0; /* removes default UL padding */
-  list-style: none; /* removes bullet points */
+  list-style: none; /* removes bullet points on the nav links */
 }
 
 /* Each list item in the nav */
 nav ul li {
   float: left; /* places items horizontally from left to right */
+  text-transform: uppercase; /* makes nav link text uppercase */
 }
 
 /* The clickable link inside each nav item */
 nav ul li a {
-  display: block; /* makes the link fill the entire LI area */
+  display: block; /* makes the link fill the entire list item area */
   padding: 12px 20px; /* adds space around the text (top/bottom, left/right) */
-  color: white; /* text color */
-  text-decoration: none; /* removes underline */
+  color: white; /* makes the text white */
+  text-decoration: none; /* removes underline from the nav links */
 }
 
 /* The active page (highlighted tab) */
 nav ul li a.active {
-  background-color: #044f83; /* blue background for the active page */
+  background-color: #044f83; /* blue background for the active page the person is viewing */
 }
 
 /* Hover effect when mouse is over a link */
 nav ul li a:hover {
-  background-color: black; /* background turns black on hover */
-  color: white; /* keeps text white */
+  background-color: black; /* background turns black when the cursor hover over the nav link */
+  color: white; /* keeps text white when it is hovered over */
 }
 
 html {
-  font-size: 62.5%;
-  background-color: whitesmoke;
-  scroll-behavior: smooth;
+  font-size: 62.5%; /* sets the base font size to 10px (62.5% of the default 16px) for easier rem calculations */
+  background-color: whitesmoke; /* light background color for the whole page */
+  scroll-behavior: smooth; /* smooth scrolling for anchor links (e.g., top of page button) */
 }
 figcaption {
-  font-size: 12px;
-  color: black;
-  text-align: center;
+  font-size: 12px; /* smaller text for image captions */
+  color: black; /* black text for captions */
+  text-align: center; /* centers the caption text under the image */
 }
 footer {
-  font-size: 12px;
-  background-color: #002900;
-  color: white;
-  text-align: center;
-  padding: 1.5px;
+  font-size: 12px; /* smaller text for the footer */
+  background-color: #002900; /* dark green background for the footer */
+  color: white; /* white text for the footer */
+  text-align: center; /* centers the footer text */
+  padding: 1.5px; /* small space inside the footer */
 }
 
 .image-row {
@@ -134,8 +136,8 @@ footer {
 }
 /* Highlight important text like Lower Fort Garry */
 #highlight {
-  background-color: black;
-  color: white;
+  background-color: black; /* black background behind the text */
+  color: white; /* white text for contrast */
   /* padding = space inside an element between its content and its border; makes text or content less cramped */
   padding: 2px 4px;
 }
@@ -166,7 +168,7 @@ footer #copyright {
 }
 #nations-list {
   list-style-type: none; /* removes bullets */
-  padding: 0;
+  padding: 0; /* removes default padding */
   margin: 0; /* optional: removes extra spacing */
   columns: 2; /* splits into 2 columns */
   column-gap: 40px; /* space between columns */
@@ -184,16 +186,17 @@ table {
   margin: 20px auto; /* centers the entire table */
   border-radius: 10px; /* rounded corners */
   border-collapse: collapse; /* ensures borders merge cleanly */
-  text-align: center;
+  text-align: center; /* centers text in all table cells */
 }
 
 /* Caption styling */
 table caption {
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: black;
-  font-family: "Times New Roman", Times, serif;
+  font-weight: bold; /* makes the caption text bold */
+  font-size: 20px; /* size of the caption text */
+  margin-bottom: 10px; /* space between caption and table */
+  color: black; /* caption text color */
+  font-family:
+    "Times New Roman", Times, serif; /* font for all the text in the table; tries Times New Roman, then Times, then any serif font */
 }
 
 /* Header row */
@@ -207,11 +210,11 @@ table th {
 
 /* Remove last cell's right border */
 table td:last-child {
-  border-right: none;
+  border-right: none; /* removes the right border from the last cell in each row to prevent double borders on the right edge of the table */
 }
 /* Remove last header's right border */
 table th:last-child {
-  border-right: none;
+  border-right: none; /* removes the right border from the last header cell to prevent double borders on the right edge of the table */
 }
 
 /* Table cells */
@@ -241,6 +244,6 @@ table td {
 img {
   border: 3px solid black; /* adds a border around images */
   border-radius: 10px; /* rounds the corners of images */
-  display: block;
+  display: block; /* makes images take up the full width of their container and start on a new line */
   margin: 0 auto; /* centers images within their container */
 }
