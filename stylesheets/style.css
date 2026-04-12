@@ -6,40 +6,57 @@
 /* # = ID = Single use */
 /* . = Class = multiple use */
 body {
+  /* sets the text color for the entire body of the page to white */
   color: white;
-  text-align: center;
+  /* makes all text in the body bold */
   font-weight: bold;
   /*
     This can be anything from 1.6rem to 2.4rem based on what you like.
   */
   font-size: 1.8rem;
+  /* adds small space between letters */
   letter-spacing: 0.01em;
 }
 p {
+  /* This is the font for the paragraphs. The web browser will try Georgia first, then if it does not work, then  it tries Cambria, then if it does not work, it tries any serif font */
   font-family: Georgia, Cambria, Serif;
 }
 h1 {
-  font-size: 3.6rem;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  background-color: #002900;
-  padding: 30px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 3.6rem; /* size of the main heading */
+  color: white; /* heading text is white */
+  text-transform: uppercase; /* makes all letters uppercase */
+  letter-spacing: 0.05em; /* adds space between letters */
+  background-color: #002900; /* green background behind the heading */
+  padding: 30px; /* space inside the heading box */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the heading text */
 }
 h2 {
-  font-size: 2.8rem;
-  letter-spacing: 0.03em;
-  color: white;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 2.8rem; /* size of h2 headings */
+  letter-spacing: 0.03em; /* small space between letters */
+  color: white; /* text color is white */
+  font-weight: bold; /* text is bolder */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the text */
 }
 h3 {
-  font-size: 2.2rem;
-  letter-spacing: 0.02em;
+  font-size: 2.2rem; /* size of h3 headings */
+  letter-spacing: 0.02em; /* small space between letters */
+  color: white; /* text color is white */
+  font-weight: bold; /* text is bolder */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the text */
+}
+h4 {
+  font-size: 1.8rem;
+  letter-spacing: 0.01em;
   color: white;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 /* * means all elements on the page */
 * {
@@ -93,7 +110,7 @@ html {
 }
 figcaption {
   font-size: 12px;
-  color: white;
+  color: black;
   text-align: center;
 }
 footer {
@@ -164,6 +181,7 @@ table {
   margin: 20px auto; /* centers the entire table */
   border-radius: 10px; /* rounded corners */
   border-collapse: collapse; /* ensures borders merge cleanly */
+  text-align: center;
 }
 
 /* Caption styling */
@@ -200,4 +218,26 @@ table td {
   vertical-align: top; /* keeps multi-line text aligned nicely */
   color: black; /* cell text color */
   border-right: 2px solid black; /* vertical lines between columns */
+}
+
+/* 
+  intro-wrapper:
+  This container holds BOTH the text section and the image.
+  display:flex places them side-by-side in a horizontal row.
+  align-items:flex-start aligns the tops of both elements evenly.
+  gap adds space between the text and the image.
+  margin adds spacing above and below the entire block.
+*/
+.intro-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+img {
+  border: 3px solid black; /* adds a border around images */
+  border-radius: 10px; /* rounds the corners of images */
+  display: block;
+  margin: 0 auto; /* centers images within their container */
 }
