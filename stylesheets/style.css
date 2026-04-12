@@ -1,3 +1,38 @@
+/*
+  COLOUR CHOICES:
+  I chose a green colour family (dark green, forest/olive green) because these
+  colours represent land, nature, growth, and Indigenous identity. This matches
+  the purpose of a Treaty 1 educational website, which focuses on land,
+  history, and the relationship between Indigenous Nations and the Crown.
+
+  THEME CHOICE:
+  I chose a light theme because my website contains a large amount of text that
+  users need to read comfortably. I used a white background for the main background.
+  I then used forest/olive green for the section boxes to create a clear visual separation between 
+  different sections of content, making it easier for users to focus on one topic at a time. 
+  I then used white as the text color and heading colors for the webiste since they are in the boxes and they contrast 
+  well with the green's.
+  I used dark green for headings and important elements to create contrast and draw attention to key information.
+  I then used blue as the accent colour for the navigation bar to create a clear visual distinction between the main
+  content and the navigation, making it easier for users to find and use the menu.
+  This combination of light background with green accents creates a visually appealing and easy-to-read design that 
+  supports the educational purpose of the website.
+
+  COLOUR SCHEME:
+  Primary Colour: Green (#002900, #3e563e)
+  Secondary Colour: Blue (#044f83) — used only for the navigation bar
+  Neutral Colours: White, Black, Gray
+  This creates a monochromatic/analogous colour scheme based on greens, with a
+  single secondary accent (blue) used strictly for navigation.
+
+  FONT CHOICES:
+  I used serif fonts throughout the website to create a traditional, trustworthy,
+  and historical feeling. Paragraphs use Georgia, which is smooth and easy to
+  read for longer text, while all headings use Times New Roman, which looks more
+  formal and authoritative. Using these two serif fonts together creates a strong,
+  consistent visual style that fits the educational and historical purpose of the
+  website.
+*/
 /* display: block = element with a specific id or class takes the full width of its line and starts on a new line */
 /* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
 /* display: inline-block = element with a specific id or class stays in the same line but width and height can be adjusted */
