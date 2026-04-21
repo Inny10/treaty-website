@@ -154,13 +154,16 @@ figcaption {
   text-align: center; /* centers the caption text under the image */
 }
 footer {
-  font-size: 12px; /* smaller text for the footer */
+  font-size: 15px; /* smaller text for the footer */
   background-color: #002900; /* dark green background for the footer */
   color: white; /* white text for the footer */
   text-align: center; /* centers the footer text */
   padding: 2.5rem; /* small space inside the footer */
 }
-
+footer #copyright {
+  color: white; /* only the &copy; will be white */
+  font-size: 25px; /* make the © bigger than the rest */
+}
 .image-row {
   /* display: flex = element with a specific id or class arranges all elements inside it in a row or column layout, making them line up side by side by default */
   display: flex;
@@ -176,10 +179,7 @@ footer {
   /* padding = space inside an element between its content and its border; makes text or content less cramped */
   padding: 2px 4px;
 }
-footer #copyright {
-  color: white; /* only the &copy; will be white */
-  font-size: 18px; /* make the © bigger than the rest */
-}
+
 /* Styles for the "Back to Top" button */
 .back-to-top {
   position: fixed; /* keeps the button in the same place even when scrolling */
