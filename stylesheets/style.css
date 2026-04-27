@@ -51,6 +51,10 @@ body {
   font-size: 1.8rem;
   /* adds small space between letters */
   letter-spacing: 0.01em;
+  /* sets the width of the body */
+  width: 95%;
+  /* centers the body content */
+  margin: 0 auto;
 }
 p {
   /* This is the font for the paragraphs. The web browser will try Georgia first, then if it does not work, then  it tries Cambria, then if it does not work, it tries any serif font */
