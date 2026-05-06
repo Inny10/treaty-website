@@ -42,7 +42,7 @@
 /* . = Class = multiple use */
 body {
   /* sets the text color for the entire body of the page to white */
-  color: white;
+  color: #121212;
   /* makes all text in the body bold */
   font-weight: bold;
   /*
@@ -62,7 +62,7 @@ p {
 }
 h1 {
   font-size: 3.6rem; /* size of the main heading */
-  color: white; /* heading text is white */
+  color: #f5f5f5; /* heading text is white */
   text-transform: uppercase; /* makes all letters uppercase */
   letter-spacing: 0.05em; /* adds space between letters */
   background-color: #002900; /* green background behind the heading */
@@ -74,7 +74,6 @@ h1 {
 h2 {
   font-size: 2.8rem; /* size of h2 headings */
   letter-spacing: 0.03em; /* small space between letters */
-  color: white; /* text color is white */
   font-weight: bold; /* text is bolder */
   font-family:
     "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
@@ -84,7 +83,6 @@ h2 {
 h3 {
   font-size: 2.2rem; /* size of h3 headings */
   letter-spacing: 0.02em; /* small space between letters */
-  color: white; /* text color is white */
   font-weight: bold; /* text is bolder */
   font-family:
     "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
@@ -94,7 +92,6 @@ h3 {
 h4 {
   font-size: 1.8rem; /* size of h4 headings */
   letter-spacing: 0.01em; /* small space between letters */
-  color: white; /* text color is white */
   font-weight: bold; /* text is bolder */
   font-family:
     "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
@@ -132,7 +129,7 @@ nav ul li {
 nav ul li a {
   display: block; /* makes the link fill the entire list item area */
   padding: 12px 20px; /* adds space around the text (top/bottom, left/right) */
-  color: white; /* makes the text white */
+  color: #f5f5f5; /* makes the text white */
   text-decoration: none; /* removes underline from the nav links */
 }
 
@@ -143,8 +140,8 @@ nav ul li a.active {
 
 /* Hover effect when mouse is over a link */
 nav ul li a:hover {
-  background-color: black; /* background turns black when the cursor hover over the nav link */
-  color: white; /* keeps text white when it is hovered over */
+  background-color: #121212; /* background turns dark gray when the cursor hover over the nav link */
+  color: #f5f5f5; /* keeps text white when it is hovered over */
 }
 
 html {
@@ -154,18 +151,18 @@ html {
 }
 figcaption {
   font-size: 12px; /* smaller text for image captions */
-  color: black; /* black text for captions */
+  color: #121212; /* dark gray text for captions */
   text-align: center; /* centers the caption text under the image */
 }
 footer {
   font-size: 15px; /* smaller text for the footer */
   background-color: #002900; /* dark green background for the footer */
-  color: white; /* white text for the footer */
+  color: #f5f5f5; /* white text for the footer */
   text-align: center; /* centers the footer text */
   padding: 2.5rem; /* small space inside the footer */
 }
 footer #copyright {
-  color: white; /* only the &copy; will be white */
+  color: #f5f5f5; /* only the &copy; will be white */
   font-size: 25px; /* make the © bigger than the rest */
 }
 .image-row {
@@ -178,8 +175,8 @@ footer #copyright {
 }
 /* Highlight important text like Lower Fort Garry */
 #highlight {
-  background-color: black; /* black background behind the text */
-  color: white; /* white text for contrast */
+  background-color: #121212; /* dark gray background behind the text */
+  color: #f5f5f5; /* white text for contrast */
   /* padding = space inside an element between its content and its border; makes text or content less cramped */
   padding: 2px 4px;
 }
@@ -190,7 +187,7 @@ footer #copyright {
   bottom: 20px; /* distance from the bottom of the screen */
   right: 20px; /* distance from the right side of the screen */
   background: #333333; /* dark background color for the button */
-  color: white; /* white text for contrast */
+  color: #f5f5f5; /* white text for contrast */
   padding: 10px 15px; /* space inside the button (top/bottom, left/right) */
   border-radius: 5px; /* slightly rounded corners for a smoother look */
   text-decoration: none; /* removes underline from the link */
@@ -198,8 +195,8 @@ footer #copyright {
   opacity: 0.7; /* makes the button slightly transparent */
 }
 .section-box {
-  border: 2px solid black; /* adds a black border around the section */
-  background-color: #3e563e; /* dark green background for the section */
+  border: 2px solid #121212; /* adds a dark gray border around the section */
+  background-color: #c5ccc5; /* dark green background for the section */
   border-radius: 10px; /* rounds the corners of the box */
   padding: 10px; /* adds space inside the box between the content and the border */
   margin: 20px auto; /* adds space outside the box and centers it horizontally */
@@ -220,7 +217,7 @@ footer #copyright {
 
 table {
   width: 78%; /* makes table stretch nicely */
-  border: 3px solid black; /* adds a border around the table */
+  border: 3px solid #121212; /* adds a dark gray border around the table */
   border-collapse: collapse; /* removes double borders */
   margin: 20px auto; /* centers the entire table */
   border-radius: 10px; /* rounded corners */
@@ -233,7 +230,7 @@ table caption {
   font-weight: bold; /* makes the caption text bold */
   font-size: 20px; /* size of the caption text */
   margin-bottom: 10px; /* space between caption and table */
-  color: black; /* caption text color */
+  color: #121212; /* caption text color */
   font-family:
     "Times New Roman", Times, serif; /* font for all the text in the table; tries Times New Roman, then Times, then any serif font */
 }
@@ -241,10 +238,10 @@ table caption {
 /* Header row */
 table th {
   background-color: #333333; /* dark header */
-  color: white; /* white text */
+  color: #f5f5f5; /* white text */
   padding: 10px; /* spacing */
   border-bottom: 2px solid #555; /* subtle divider */
-  border-right: 2px solid black; /* vertical lines between columns */
+  border-right: 2px solid #121212; /* vertical lines between columns */
 }
 
 /* Remove last cell's right border */
@@ -261,8 +258,8 @@ table td {
   padding: 10px; /* spacing inside cells */
   border-bottom: 1px solid #333333; /* light row divider */
   vertical-align: top; /* keeps multi-line text aligned nicely */
-  color: black; /* cell text color */
-  border-right: 2px solid black; /* vertical lines between columns */
+  color: #121212; /* cell text color */
+  border-right: 2px solid #121212; /* vertical lines between columns */
 }
 
 /* 
@@ -281,7 +278,7 @@ table td {
 }
 
 img {
-  border: 3px solid black; /* adds a border around images */
+  border: 3px solid #121212; /* adds a border around images */
   border-radius: 10px; /* rounds the corners of images */
   display: block; /* makes images take up the full width of their container and start on a new line */
   margin: 0 auto; /* centers images within their container */
