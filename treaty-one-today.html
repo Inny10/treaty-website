@@ -1,11 +1,78 @@
+<!--
+Name: Inny Ogundeji
+Course: P7-8 Web Development
+Teacher: Mr. Hardman
+School: Pembina Trails Collegiate
+Date Last Modified: 5/15/2026
+-->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Treaty One Nations</title>
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body></body>
+  <!--
+    CLASS (.class) = Used to style multiple elements that share the same class name. Unlike an ID, a class can be reused many times on a webpage.
+    ID (#id) = A unique identifier for a single element on the page. Used to style or target one specific element.
+    DIV = A block-level element used to group other elements together. Useful for layout and applying styles to multiple elements at once.
+    SPAN = An inline element used to target or style a small piece of text or part of an element without affecting the layout.
+  -->
+  <body>
+    <!-- Anchor target for top -->
+    <!-- 
+      The anchor tag with an id of "top" serves as a target for the back-to-top button. 
+      When users click the back-to-top link, it will scroll the page back to this anchor point at the top of the page.
+    -->
+    <a id="top"></a>
+    <header>
+      <h1>Treaty One Nations</h1>
+      <!-- 
+        aria-label = provides a descriptive label for elements (like nav or buttons) 
+        that is read by screen readers for accessibility, but not visible on the page. 
+        Example: <nav aria-label="Main Navigation">...</nav>
+      -->
+      <nav aria-label="Main-Navigation">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about-treaty-one.html">About</a></li>
+          <li><a href="treaty-one-today.html">Modern Treaty One</a></li>
+          <!-- 
+            style="float: right" = This CSS style is applied to the list item to make it float to the right side of the navigation bar. 
+            This is often used for items like "Contact" that are meant to be visually separated from the main navigation links.
+          -->
+          <li style="float: right"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-box" aria-labelledby="modern-treaty-heading">
+        <h2 id="modern-treaty-heading">Modern Treaty One</h2>
+        <p>
+          Today, Treaty One Nations are actively engaged in various initiatives
+          to revitalize their culture, language, and traditions. This includes
+          the development of community programs, educational resources, and
+          partnerships with other organizations.
+        </p>
+        <p>
+          One notable project is the Kapyong Barracks redevelopment, which aims
+          to transform the former military site into a vibrant community hub
+          that reflects the history and culture of the Treaty One Nations.
+        </p>
+      </section>
+    </main>
+    <a href="#top" class="back-to-top">↑ Top</a>
+    <footer>
+      <p>
+        <!-- Copyright information. The &copy; entity represents the copyright symbol. The span id="copyright" is used to style the copyright symbol. -->
+        <span id="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |
+        Educational Project on Treaty 1.
+      </p>
+    </footer>
+  </body>
 </html>
-talk about all the modern things they are building and stuff like kapyong
-barracks.
+<!--
+  talk about all the modern things they are building and stuff like kapyong
+  barracks.
+-->
