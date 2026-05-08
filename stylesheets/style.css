@@ -110,9 +110,10 @@ nav {
   padding: 0; /* removes inside space */
   background-color: #333333; /* dark gray background for the nav bar */
   overflow: hidden; /* keeps floated items inside the nav */
+  position: sticky;
+  top: 0; /* sticks the nav to the top of the viewport */
 }
 
-/* Remove bullets + reset UL spacing */
 nav ul {
   margin: 0; /* removes default UL margin */
   padding: 0; /* removes default UL padding */
@@ -282,4 +283,22 @@ img {
   border-radius: 10px; /* rounds the corners of images */
   display: block; /* makes images take up the full width of their container and start on a new line */
   margin: 0 auto; /* centers images within their container */
+}
+
+.coming-soon {
+  font-weight: bold; /* makes the text bold */
+  color: #c5ccc5;
+  user-select: none; /* prevents text selection */
+  -webkit-user-select: none; /* prevents text selection in Safari */
+}
+.coming-soon:hover {
+  cursor: not-allowed;
+  background-color: #333333; /* changes background color on hover */
+  color: #c5ccc5; /* changes text color on hover */
+}
+
+hr {
+  border-color: #121212; /* sets the color of the horizontal rule */
+  border-style: solid; /* makes the border solid */
+  border-width: 1.5px; /* sets the border width */
 }

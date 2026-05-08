@@ -5,6 +5,7 @@ Teacher: Mr. Hardman
 School: Pembina Trails Collegiate
 Date Last Modified: 5/15/2026
 -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,39 +29,61 @@ Date Last Modified: 5/15/2026
     <a id="top"></a>
     <header>
       <h1>Treaty One Nations</h1>
-      <!-- 
-        aria-label = provides a descriptive label for elements (like nav or buttons) 
-        that is read by screen readers for accessibility, but not visible on the page. 
-        Example: <nav aria-label="Main Navigation">...</nav>
-      -->
-      <nav aria-label="Main-Navigation">
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about-treaty-one.html">About</a></li>
-          <li><a href="treaty-one-today.html">Modern Treaty One</a></li>
-          <!-- 
+    </header>
+    <!-- 
+      aria-label = provides a descriptive label for elements (like nav or buttons) 
+      that is read by screen readers for accessibility, but not visible on the page. 
+      Example: <nav aria-label="Main Navigation">...</nav>
+    -->
+    <nav aria-label="Main-Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-treaty-one.html">About</a></li>
+        <li>
+          <a class="active" href="treaty-one-today.html">Modern Treaty One</a>
+        </li>
+        <li><a href="#" class="coming-soon">Coming Soon</a></li>
+
+        <!-- 
             style="float: right" = This CSS style is applied to the list item to make it float to the right side of the navigation bar. 
             This is often used for items like "Contact" that are meant to be visually separated from the main navigation links.
           -->
-          <li style="float: right"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+        <li style="float: right"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <main>
+      <!-- FIGURE = groups an image with a caption (figcaption). -->
+      <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
+      <figure>
+        <img
+          src="images/Treaty One Poster.png"
+          alt="Image of Treaty One as a word on a blank white surface, with the treaty one colors as the text colors."
+          width="700" />
+        <figcaption>Treaty One Poster</figcaption>
+      </figure>
+
+      <!-- 
+        aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+        It helps screen readers understand the structure and content of the page by linking the section to its heading.
+      -->
+      <!-- The section tag is used to define a section in the document. This applies for all sections -->
       <section class="section-box" aria-labelledby="modern-treaty-heading">
         <h2 id="modern-treaty-heading">Modern Treaty One</h2>
         <p>
-          Today, Treaty One Nations are actively engaged in various initiatives
-          to revitalize their culture, language, and traditions. This includes
-          the development of community programs, educational resources, and
-          partnerships with other organizations.
+          Today, Treaty One Nations are not only preserving their history but
+          actively shaping the future. The First Nations within Treaty 1
+          continue to strengthen their governments, communities, and cultural
+          identities in modern Canada.
         </p>
+
         <p>
-          One notable project is the Kapyong Barracks redevelopment, which aims
-          to transform the former military site into a vibrant community hub
-          that reflects the history and culture of the Treaty One Nations.
+          Modern Treaty One is about more than the original 1871 agreement; it
+          represents ongoing self-determination, leadership, and progress for
+          the seven Nations within the territory.
         </p>
       </section>
+      <hr />
+      <h2>Modern Developments</h2>
     </main>
     <a href="#top" class="back-to-top">↑ Top</a>
     <footer>
