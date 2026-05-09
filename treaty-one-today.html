@@ -82,8 +82,120 @@ Date Last Modified: 5/15/2026
           the seven Nations within the territory.
         </p>
       </section>
+      <!-- The hr element creates a horizontal rule -->
       <hr />
-      <h2>Modern Developments</h2>
+      <!-- 
+        I used a div to group the introduction section and the first image together because they are related content. 
+        This allows me to apply styles to both the text and the image as a cohesive unit, creating a visually appealing layout.
+      -->
+      <div class="intro-wrapper">
+        <!-- 
+          aria-labelledby = associates the section with a heading (like h2) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
+        <!-- The section tag is used to define a section in the document. This applies for all sections -->
+        <section
+          class="section-box"
+          aria-labelledby="development-projects-heading">
+          <h2 id="development-projects-heading">Development Projects</h2>
+
+          <p>
+            In recent years, Treaty One Nations have become increasingly
+            involved in major land and business initiatives throughout Manitoba.
+          </p>
+
+          <p>
+            These projects reflect a growing focus on urban expansion,
+            partnerships, and creating new opportunities both within and beyond
+            their communities.
+          </p>
+
+          <p>
+            Many developments are designed to support long-term economic growth
+            while also benefiting future generations of Treaty One people.
+          </p>
+
+          <p>
+            Treaty One Development Corporation (TIDC) is established by the
+            seven Chiefs of TIN.
+          </p>
+        </section>
+        <!-- FIGURE = groups an image with a caption (figcaption). -->
+        <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
+        <figure>
+          <img
+            src="images/Treaty One Development Cooperation Logo.png"
+            alt="Image of Treaty One Development Cooperation Logo"
+            width="550" />
+          <figcaption>Treaty One Development Cooperation Logo</figcaption>
+        </figure>
+      </div>
+      <!-- The hr element creates a horizontal rule -->
+      <hr class="mini-hr" />
+      <h3 id="header-box">Kapyong Barracks</h3>
+      <!-- The section tag is used to define a section in the document. This applies for all sections -->
+      <section class="section-box">
+        <p>
+          Kapyong Barracks is a former Canadian military base located in
+          Winnipeg, Manitoba. After the land was declared surplus by the federal
+          government, Treaty One Nations began negotiations to reclaim the site.
+        </p>
+
+        <p>
+          Following a series of Federal Court and Court of Appeal decisions
+          (SEPT 2009 – AUG 2015) , the Federal Court of Appeal ruled that Canada
+          failed to properly consult with First Nations before the sale of the
+          Kapyong Barracks. As a result of the Federal Court of Appeal ruling,
+          Treaty 1 First Nations were able to obtain the land through purchase,
+          eventually signing the Comprehensive Settlement Agreement with Canada.
+        </p>
+
+        <p>
+          The land agreement was finalized in 2019 after years of legal
+          discussions and advocacy, marking an important moment for Treaty One
+          Nations and urban Indigenous development in Manitoba. The site was
+          formally repatriated as the Naawi‑Oodena urban reserve in 2022.
+        </p>
+
+        <p>
+          Today, the Kapyong Barracks site is planned to become a major
+          development area that includes housing, businesses, green spaces, and
+          community services.
+        </p>
+      </section>
+      <!-- 
+        I used a div to align the following images side by side because they are related content. 
+        This allows me to apply styles to both images as a cohesive unit, creating a visually appealing layout.
+      -->
+      <div class="image-row">
+        <!-- FIGURE = groups an image with a caption (figcaption). -->
+        <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
+        <figure>
+          <img
+            src="images/Naawi Oodena Map.avif"
+            alt="Image of Naawi Oodena Map in detail, showing the amenities and layout of the future development on the Kapyong Barracks site."
+            width="400" />
+          <figcaption>Naawi Oodena Map in Detail</figcaption>
+        </figure>
+        <!-- FIGURE = groups an image with a caption (figcaption). -->
+        <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
+        <figure>
+          <img
+            src="images/Naawi Oodena Map with buildings.avif"
+            alt="Image of Naawi Oodena Map with buildings and infrastructure, showing the amenities and layout of the future development on the Kapyong Barracks site."
+            width="500" />
+          <figcaption>Naawi Oodena Map with Buildings</figcaption>
+        </figure>
+        <!-- FIGURE = groups an image with a caption (figcaption). -->
+        <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
+        <figure>
+          <img
+            src="images/naawi-oodena-site-model.avif"
+            alt="Image of Naawi Oodena Site Model, showing the proposed development on the Kapyong Barracks site."
+            width="500" />
+          <figcaption>Naawi Oodena Site Model</figcaption>
+        </figure>
+      </div>
     </main>
     <a href="#top" class="back-to-top">↑ Top</a>
     <footer>
@@ -95,7 +207,3 @@ Date Last Modified: 5/15/2026
     </footer>
   </body>
 </html>
-<!--
-  talk about all the modern things they are building and stuff like kapyong
-  barracks.
--->
