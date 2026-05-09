@@ -132,7 +132,7 @@ Date Last Modified: 5/15/2026
       </div>
       <!-- The hr element creates a horizontal rule -->
       <hr class="mini-hr" />
-      <h3 id="header-box">Kapyong Barracks</h3>
+      <h2 id="header-box">Kapyong Barracks</h2>
       <!-- The section tag is used to define a section in the document. This applies for all sections -->
       <section class="section-box">
         <p>
@@ -195,6 +195,39 @@ Date Last Modified: 5/15/2026
             width="500" />
           <figcaption>Naawi Oodena Site Model</figcaption>
         </figure>
+      </div>
+      <!-- 
+        I used a div to group the introduction section and the first image together because they are related content. 
+        This allows me to apply styles to both the text and the image as a cohesive unit, creating a visually appealing layout.
+      -->
+      <div class="intro-wrapper">
+        ADD IFRAME HERE
+
+        <!-- 
+          aria-labelledby = associates the section with a heading (like h3) for accessibility. 
+          It helps screen readers understand the structure and content of the page by linking the section to its heading.
+        -->
+        <!-- The section tag is used to define a section in the document. This applies for all sections -->
+        <section class="section-box" aria-labelledby="kapyong-location-heading">
+          <h3 id="kapyong-location-heading">Location</h3>
+          <p>
+            Kapyong Barracks is located in the southwest region of Winnipeg,
+            Manitoba, near the intersection of Kenaston Boulevard and Grant
+            Avenue.
+          </p>
+
+          <p>
+            The site is positioned close to several major roads, shopping areas,
+            schools, and residential neighborhoods, making it one of the most
+            valuable and well-connected areas in the city.
+          </p>
+
+          <p>
+            Its location also places it near important transportation routes,
+            allowing easy access to other parts of Winnipeg and contributing to
+            its significance as a future development project.
+          </p>
+        </section>
       </div>
     </main>
     <a href="#top" class="back-to-top">↑ Top</a>
