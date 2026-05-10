@@ -322,3 +322,7 @@ hr {
   width: -webkit-fit-content;
   width: fit-content; /* makes the width of the box fit the content inside it */
 }
+
+#map-border {
+  border-radius: 10px; /* rounds the corners of the map */
+}
