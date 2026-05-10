@@ -1,11 +1,166 @@
+<!--
+Name: Inny Ogundeji
+Course: P7-8 Web Development
+Teacher: Mr. Hardman
+School: Pembina Trails Collegiate
+Date Last Modified: 3/13/2026
+-->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feedback / Contact Us</title>
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body></body>
+  <!--
+    CLASS (.class) = Used to style multiple elements that share the same class name. Unlike an ID, a class can be reused many times on a webpage.
+    ID (#id) = A unique identifier for a single element on the page. Used to style or target one specific element.
+    DIV = A block-level element used to group other elements together. Useful for layout and applying styles to multiple elements at once.
+    SPAN = An inline element used to target or style a small piece of text or part of an element without affecting the layout.
+  -->
+  <body>
+    <!-- Anchor target for top -->
+    <!-- 
+      The anchor tag with an id of "top" serves as a target for the back-to-top button. 
+      When users click the back-to-top link, it will scroll the page back to this anchor point at the top of the page.
+    -->
+    <a id="top"></a>
+    <header>
+      <h1>Feedback / Contact Us</h1>
+    </header>
+    <!-- 
+      aria-label = provides a descriptive label for elements (like nav or buttons) 
+      that is read by screen readers for accessibility, but not visible on the page. 
+      Example: <nav aria-label="Main Navigation">...</nav>
+    -->
+    <nav aria-label="Main-Navigation">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about-treaty-one.html">About</a></li>
+        <li><a href="treaty-one-today.html">Modern Treaty One</a></li>
+        <li><a href="#" class="coming-soon">Coming Soon</a></li>
+        <!-- 
+            style="float: right" = This CSS style is applied to the list item to make it float to the right side of the navigation bar. 
+            This is often used for items like "Contact" that are meant to be visually separated from the main navigation links.
+          -->
+        <li style="float: right"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="header-box">Feedback</h2>
+      <section class="section-box" aria-labelledby="feedback-heading">
+        <!--I chose to use a fieldset to group related elements in a form-->
+        <fieldset>
+          <!--The fieldset element groups related elements in a form-->
+          <!--I chose to use a legend to provide a title for the fieldset-->
+          <legend><b>Enter Your Personal Information and Feedback Below:</b></legend>
+          <form id="personal-info" method="get">
+          <!--The form id uniquely identifies this form-->
+          <!-- This form collects information from the user and
+          when the submit button is pressed the data is sent because it uses the
+          using the "get" method. The "get" method sends form data in the URL. It is suitable for non-sensitive data,
+          but has limited data size and is not secure for private information.-->
+            <label for="fname">First name:</label>
+            <!--The for attribute links the label to the input with id="fname"-->
+            <br />
+            <input type="text" id="fname" name="fname" required />
+            <!-- "required" tag makes this field mandatory. The form will not submit until the user types something here.-->
+            <!--The input type text allows the user to enter a single line of text-->
+            <!--The id attribute is used to uniquely identify the input field and connect it to the label, while the name
+            attribute is used to reference the form data after it has been submitted-->
+            <br />
+            <label for="lname">Last name:</label>
+            <!-- The label describes the input field and is linked using the "for" attribute -->
+            <br />
+            <input type="text" id="lname" name="lname" required />
+            <!-- This text input allows the user to enter their last name -->
+            <!-- The id links the input to the label, and the name is used when submitting form data -->
+            <br />
+            <label for="email">Email:</label>
+            <!-- Label for the email input field -->
+            <br />
+            <input type="email" id="email" name="email" required />
+            <!-- The email input type ensures the value entered follows an email format -->
+            <!-- The name attribute is used to identify the email value in the submitted form -->
+            <br />
+            <label for="phone">Phone Number:</label>
+            <!-- Label associated with the phone number input -->
+            <br />
+            <input type="tel" id="phone" name="phone" required />
+            <!-- The tel input type is used for phone numbers -->
+            <!-- The name attribute is used to identify the phone number in the form submission -->
+            <br />
+            <label for="feedback">Your Feedback:</label><br />
+            <!-- The textarea allows the user to enter multiple lines of text -->
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="15"
+              cols="130"></textarea>
+            <br />
+            <!-- The input type button sends all the answers in the form-->
+            <input type="submit" value="Submit Feedback" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- The input type reset clears all the answers in the form-->
+            <input type="reset" value="Reset" />
+          </form>
+        </fieldset>
+      </section>
+      <h2 class="header-box">Contact Us</h2>
+      <section class="section-box" aria-labelledby="contact-us-heading">
+        <p>
+          If you have any questions or concerns about Treaty One or the
+          information on this website, please feel free to contact us using the
+          form above. 
+        </p>
+        <p>We value your feedback and are here to help!</p>
+        </p>
+        <p>
+        Email:<a href="mailto:info@treatyone.com">info@treatyone.com</a>
+      </p>
+      <p>
+        Phone: <a href="tel:(123) 456-7890">(123) 456-7890</a>
+      </p>
+      <p>
+        Address: <a href="https://www.google.com/maps/place/Naawi-Oodena,+Winnipeg,+MB/@49.8541114,-97.2179451,15z/data=!3m1!4b1!4m5!3m4!1s0x52ea74eab82e68cb:0x4ffc4bf8a3a9cf2f!8m2!3d49.8541114!4d-97.2179451"
+        target="_blank">Naawi Oodena, Winnipeg, MB</a>
+      </p>
+      <br />
+      <p>
+        We look forward to hearing from you!
+      </p>
+    </main>
+    <!-- Back to top button -->
+    <!--
+      The back-to-top button is a link that allows users to quickly return to the top of the page. 
+      It is typically styled to be easily visible and accessible, often positioned in the bottom right corner of the screen. 
+      When clicked, it scrolls the page back up to the anchor point defined at the top of the page (in this case, the <a id="top"></a> element).
+      The class "back-to-top" can be used to apply specific styles to this button, such as background color, font size, or hover effects, to make it stand out and encourage users to use it for easy navigation.
+    -->
+    <a href="#top" class="back-to-top">↑ Top</a>
+    <footer>
+      <p>
+        <!-- Copyright information. The &copy; entity represents the copyright symbol. The span id="copyright" is used to style the copyright symbol. -->
+        <span id="copyright">&copy;</span> 2026 Treaty 1 Project | Inny OG |
+        Educational Project on Treaty 1.
+      </p>
+    </footer>
+  </body>
 </html>
-Make a form for pinions and feeback, and make sure to include a submit button
-and a text area for the user to write their feedback in.
+<!--
+  Make a form for pinions and feeback, and make sure to include a submit button
+  and a text area for the user to write their feedback in.
+-->

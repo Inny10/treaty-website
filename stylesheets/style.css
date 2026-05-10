@@ -196,14 +196,7 @@ footer #copyright {
   font-size: 14px; /* size of the text inside the button */
   opacity: 0.7; /* makes the button slightly transparent */
 }
-.section-box {
-  border: 2px solid #121212; /* adds a dark gray border around the section */
-  background-color: #c5ccc5; /* dark green background for the section */
-  border-radius: 10px; /* rounds the corners of the box */
-  padding: 10px; /* adds space inside the box between the content and the border */
-  margin: 20px auto; /* adds space outside the box and centers it horizontally */
-  max-width: 1000px; /* limits the width of the box to prevent it from being too wide on large screens */
-}
+
 #nations-list {
   list-style-type: none; /* removes bullets */
   padding: 0; /* removes default padding */
@@ -311,7 +304,7 @@ hr {
   width: 70%; /* makes the horizontal rule shorter */
 }
 
-#header-box {
+.header-box {
   text-align: center; /* centers the text in the header box */
   border: 2px solid #121212; /* adds a dark gray border around the section */
   background-color: #c5ccc5; /* dark green background for the section */
@@ -323,6 +316,11 @@ hr {
   width: fit-content; /* makes the width of the box fit the content inside it */
 }
 
-#map-border {
-  border-radius: 10px; /* rounds the corners of the map */
+.section-box {
+  border: 2px solid #121212; /* adds a dark gray border around the section */
+  background-color: #c5ccc5; /* dark green background for the section */
+  border-radius: 10px; /* rounds the corners of the box */
+  padding: 10px; /* adds space inside the box between the content and the border */
+  margin: 20px auto; /* adds space outside the box and centers it horizontally */
+  max-width: 1000px; /* limits the width of the box to prevent it from being too wide on large screens */
 }
