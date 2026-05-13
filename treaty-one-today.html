@@ -13,6 +13,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Treaty One</title>
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      #image-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+          "map buildings"
+          "map model";
+        justify-content: center;
+        align-items: center;
+      }
+      #map-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: map;
+        width: 100%;
+        height: 100%;
+      }
+      #map-image img {
+        margin: 0;
+        width: 80%;
+        height: 80%;
+      }
+      #buildings-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: buildings;
+        height: 100%;
+      }
+      #buildings-image img {
+        margin: 0;
+        height: 90%;
+      }
+      #model-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: model;
+        height: 100%;
+      }
+      #model-image img {
+        margin: 0;
+        height: 90%;
+      }
+    </style>
   </head>
   <!--
     CLASS (.class) = Used to style multiple elements that share the same class name. Unlike an ID, a class can be reused many times on a webpage.
@@ -167,10 +217,10 @@
         I used a div to align the following images side by side because they are related content. 
         This allows me to apply styles to both images as a cohesive unit, creating a visually appealing layout.
       -->
-      <div class="image-row">
+      <section id="image-grid">
         <!-- FIGURE = groups an image with a caption (figcaption). -->
         <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
-        <figure>
+        <figure id="map-image">
           <img
             src="images/Naawi Oodena Map.avif"
             alt="Image of Naawi Oodena Map in detail, showing the amenities and layout of the future development on the Kapyong Barracks site."
@@ -179,7 +229,7 @@
         </figure>
         <!-- FIGURE = groups an image with a caption (figcaption). -->
         <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
-        <figure>
+        <figure id="buildings-image">
           <img
             src="images/Naawi Oodena Map with buildings.avif"
             alt="Image of Naawi Oodena Map with buildings and infrastructure, showing the amenities and layout of the future development on the Kapyong Barracks site."
@@ -188,14 +238,14 @@
         </figure>
         <!-- FIGURE = groups an image with a caption (figcaption). -->
         <!-- FIGCAPTION = caption text for a figure element. Can be styled for font, color, and alignment. -->
-        <figure>
+        <figure id="model-image">
           <img
             src="images/naawi-oodena-site-model.avif"
             alt="Image of Naawi Oodena Site Model, showing the proposed development on the Kapyong Barracks site."
             width="500" />
           <figcaption>Naawi Oodena Site Model</figcaption>
         </figure>
-      </div>
+      </section>
       <!-- 
         I used a div to group the introduction section and the first image together because they are related content. 
         This allows me to apply styles to both the text and the image as a cohesive unit, creating a visually appealing layout.
