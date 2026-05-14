@@ -71,7 +71,7 @@ body {
   /* centers the body content */
   margin: 0 auto;
   /* adds a fade-in animation to the body */
-  /* I added prefixes for the animations for accessibility/compatibility */
+  /* I added prefixes for the animations for accessibility/compatibility with other browsers */
   animation: fadeInBody 1.5s ease-in-out;
   -o-animation: fadeInBody 1.5s ease-in-out;
   -moz-animation: fadeInBody 1.5s ease-in-out;
@@ -98,7 +98,7 @@ body {
 }
 
 /* This class is used to reveal text with a letter-spacing animation */
-/* I added prefixes for the animations for accessibility/compatibility */
+/* I added prefixes for the animations for accessibility/compatibility with other browsers*/
 .reveal-text {
   animation: spacingReveal 1.5s ease-out;
   -o-animation: spacingReveal 1.5s ease-out;
@@ -243,6 +243,7 @@ footer #copyright {
   padding: 10px 15px; /* space inside the button (top/bottom, left/right) */
   border-radius: 5px; /* slightly rounded corners for a smoother look */
   text-decoration: none; /* removes underline from the link */
+
   font-size: 14px; /* size of the text inside the button */
   opacity: 0.7; /* makes the button slightly transparent */
 }
@@ -378,6 +379,19 @@ hr {
     /* does a smooth transition over a specified duration */ box-shadow 0.2s
       ease-in;
   /* smoothly animates the box‑shadow change over 0.2s with a gentle ease‑in effect */
+  /* I added prefixes for the animations for accessibility/compatibility with other browsers */
+  -o-transition:
+    translate 0.43s ease-in-out,
+    box-shadow 0.2s ease-in;
+  -moz-transition:
+    translate 0.43s ease-in-out,
+    box-shadow 0.2s ease-in;
+  -webkit-transition:
+    translate 0.43s ease-in-out,
+    box-shadow 0.2s ease-in;
+  -ms-transition:
+    translate 0.43s ease-in-out,
+    box-shadow 0.2s ease-in;
 }
 
 .section-box:hover {
