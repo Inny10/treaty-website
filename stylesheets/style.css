@@ -70,6 +70,41 @@ body {
   width: 95%;
   /* centers the body content */
   margin: 0 auto;
+  /* adds a fade-in animation to the body */
+  /* I added prefixes for the animations for accessibility/compatibility */
+  animation: fadeInBody 1.5s ease-in-out;
+  -o-animation: fadeInBody 1.5s ease-in-out;
+  -moz-animation: fadeInBody 1.5s ease-in-out;
+  -webkit-animation: fadeInBody 1.5s ease-in-out;
+  -ms-zoom-animation: fadeInBody 1.5s ease-in-out;
+}
+/* This is the keyframes for the fade-in animation */
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* This is the keyframes for the letter-spacing reveal animation */
+@keyframes spacingReveal {
+  from {
+    letter-spacing: -1.5em;
+  }
+  to {
+    letter-spacing: 0.01em;
+  }
+}
+
+/* This class is used to reveal text with a letter-spacing animation */
+/* I added prefixes for the animations for accessibility/compatibility */
+.reveal-text {
+  animation: spacingReveal 1.5s ease-out;
+  -o-animation: spacingReveal 1.5s ease-out;
+  -moz-animation: spacingReveal 1.5s ease-out;
+  -webkit-animation: spacingReveal 1.5s ease-out;
+  -ms-zoom-animation: spacingReveal 1.5s ease-out;
 }
 
 p {
