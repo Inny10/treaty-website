@@ -61,33 +61,33 @@
           when the submit button is pressed the data is sent because it uses the
           using the "get" method. The "get" method sends form data in the URL. It is suitable for non-sensitive data,
           but has limited data size and is not secure for private information.-->
-            <label for="fname">*First name:</label>
+            <label for="fname">First name:</label>
             <!--The for attribute links the label to the input with id="fname"-->
             <br />
-            <input type="text" id="fname" name="fname" required />
+            <input type="text" id="fname" name="fname" />
             <!-- "required" tag makes this field mandatory. The form will not submit until the user types something here.-->
             <!--The input type text allows the user to enter a single line of text-->
             <!--The id attribute is used to uniquely identify the input field and connect it to the label, while the name
             attribute is used to reference the form data after it has been submitted-->
             <br />
-            <label for="lname">*Last name:</label>
+            <label for="lname">Last name:</label>
             <!-- The label describes the input field and is linked using the "for" attribute -->
             <br />
-            <input type="text" id="lname" name="lname" required />
+            <input type="text" id="lname" name="lname" />
             <!-- This text input allows the user to enter their last name -->
             <!-- The id links the input to the label, and the name is used when submitting form data -->
             <br />
             <label for="email">*Email:</label>
             <!-- Label for the email input field -->
             <br />
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" required/>
             <!-- The email input type ensures the value entered follows an email format -->
             <!-- The name attribute is used to identify the email value in the submitted form -->
             <br />
             <label for="phone">*Phone Number:</label>
             <!-- Label associated with the phone number input -->
             <br />
-            <input type="tel" id="phone" name="phone" required />
+            <input type="tel" id="phone" name="phone" required/>
             <!-- The tel input type is used for phone numbers -->
             <!-- The name attribute is used to identify the phone number in the form submission -->
             <br />
