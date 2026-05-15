@@ -100,11 +100,11 @@ body {
 /* This class is used to reveal text with a letter-spacing animation */
 /* I added prefixes for the animations for accessibility/compatibility with other browsers*/
 .reveal-text {
-  animation: spacingReveal 1.5s ease-out;
-  -o-animation: spacingReveal 1.5s ease-out;
-  -moz-animation: spacingReveal 1.5s ease-out;
-  -webkit-animation: spacingReveal 1.5s ease-out;
-  -ms-zoom-animation: spacingReveal 1.5s ease-out;
+  animation: spacingReveal 1.5s ease-out forwards;
+  -o-animation: spacingReveal 1.5s ease-out forwards;
+  -moz-animation: spacingReveal 1.5s ease-out forwards;
+  -webkit-animation: spacingReveal 1.5s ease-out forwards;
+  -ms-zoom-animation: spacingReveal 1.5s ease-out forwards;
 }
 
 p {
@@ -238,14 +238,13 @@ footer #copyright {
   position: fixed; /* keeps the button in the same place even when scrolling */
   bottom: 20px; /* distance from the bottom of the screen */
   right: 20px; /* distance from the right side of the screen */
-  background: #333333; /* dark background color for the button */
+  background: #044f83; /* dark background color for the button */
   color: #f5f5f5; /* white text for contrast */
   padding: 10px 15px; /* space inside the button (top/bottom, left/right) */
   border-radius: 5px; /* slightly rounded corners for a smoother look */
   text-decoration: none; /* removes underline from the link */
-
   font-size: 14px; /* size of the text inside the button */
-  opacity: 0.7; /* makes the button slightly transparent */
+  border-radius: 50%; /* makes the button circular */
 }
 
 #nations-list {
