@@ -81,19 +81,19 @@ body {
 /* This is the keyframes for the fade-in animation */
 @keyframes fadeInBody {
   from {
-    opacity: 0;
+    opacity: 0; /* starts fully transparent */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* ends fully opaque */
   }
 }
 /* This is the keyframes for the letter-spacing reveal animation */
 @keyframes spacingReveal {
   from {
-    letter-spacing: -1.5em;
+    letter-spacing: -1.5em; /* starts with letters overlapping each other */
   }
   to {
-    letter-spacing: 0.01em;
+    letter-spacing: 0.01em; /* ends with normal letter spacing */
   }
 }
 
@@ -160,7 +160,7 @@ nav {
   padding: 0; /* removes inside space */
   background-color: #333333; /* dark gray background for the nav bar */
   overflow: hidden; /* keeps floated items inside the nav */
-  position: sticky;
+  position: sticky; /* makes the nav stick to the top of the page when scrolling */
   top: 0; /* sticks the nav to the top of the viewport */
   z-index: 100; /* ensures the nav is above other content */
 }
@@ -364,6 +364,7 @@ hr {
   margin: 20px auto; /* adds space outside the box and centers it horizontally */
   max-width: 1000px; /* limits the width of the box to prevent it from being too wide on large screens */
   width: -webkit-fit-content;
+  /* makes the width of the box fit the content inside it. VS Code auto‑added the -webkit prefix for this property*/
   width: fit-content; /* makes the width of the box fit the content inside it */
 }
 
